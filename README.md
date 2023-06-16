@@ -1,1 +1,1 @@
-Em resumo o código faz uploud de uma imagem, faz modificações utilizando as bibliotecas OpenCV e Numpy e ao final exibe primeiramente a imagem original e após tudo que foi feito para deixa-la maior, menor
+Em resumo o código faz uploud de uma imagem, faz modificações utilizando as bibliotecas OpenCV e Numpy e ao final exibe primeiramente a imagem original e depois uma sequencia da imagem original com possíveis modificações feitas com a utilização das bibliotecas.
