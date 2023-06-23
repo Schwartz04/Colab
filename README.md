@@ -2,7 +2,7 @@ Importação de bibliotecas: As bibliotecas necessárias para o código são imp
 
 Importação adicional para Google Colab: É feita uma importação adicional do cv2_imshow dos patches do Google Colab, se o código estiver sendo executado no ambiente do Google Colab.
 
-Carregamento das imagens: Três imagens em escala de cinza são carregadas usando a função cv2.imread(). As imagens são 'j.png', 'j_ruido.png' e 'j_furos.png'. O argumento 0 passado para a função indica que as imagens devem ser carregadas em escala de cinza.
+Carregamento das imagens: Três imagens em escala de cinza são carregadas usando a função cv2.imread(). As imagens são "j.png", "j_ruido.png" e "j_furos.png". O argumento 0 passado para a função indica que as imagens devem ser carregadas em escala de cinza.
 
 Definição da altura e largura da imagem original: A altura e largura da imagem original (img) são obtidas usando o atributo shape do array.
 
@@ -16,9 +16,9 @@ Dilatação: A função cv2.dilate() é usada para realizar a dilatação na ima
 
 Gradiente morfológico: A função cv2.morphologyEx() é usada para calcular o gradiente morfológico na imagem original (img), utilizando o kernel e o tipo de operação cv2.MORPH_GRADIENT. O gradiente morfológico é a diferença entre a dilatação e a erosão da imagem e destaca as bordas dos objetos.
 
-Abertura: A função cv2.morphologyEx() é usada para realizar a abertura na imagem img_opening, que é a imagem carregada a partir de 'j_ruido.png'. A abertura é uma combinação de erosão seguida de dilatação e é usada para remover ruídos e pequenos objetos.
+Abertura: A função cv2.morphologyEx() é usada para realizar a abertura na imagem img_opening, que é a imagem carregada a partir de "j_ruido.png". A abertura é uma combinação de erosão seguida de dilatação e é usada para remover ruídos e pequenos objetos.
 
-Fechamento: A função cv2.morphologyEx() é usada para realizar o fechamento na imagem img_closing, que é a imagem carregada a partir de 'j_furos.png'. O fechamento é uma combinação de dilatação seguida de erosão e é usado para preencher buracos e fechar pequenas aberturas.
+Fechamento: A função cv2.morphologyEx() é usada para realizar o fechamento na imagem img_closing, que é a imagem carregada a partir de "j_furos.png". O fechamento é uma combinação de dilatação seguida de erosão e é usado para preencher buracos e fechar pequenas aberturas.
 
 Exibição das imagens: As imagens resultantes das operações morfológicas são exibidas. O código fornece duas formas de exibição das imagens:
 
